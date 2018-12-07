@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   staticws:
-    image: sim007/staticws:$WebVersion
+    image: sim007/staticws4VDL:$WebVersion
     ports:
     - 4201:80
 

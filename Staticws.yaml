@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: staticws-deployment
+  name: staticws4vdl-deployment
   labels:
-    app: staticws  
+    app: staticws4vdl  
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: staticws
+      app: staticws4vdl
   template:
     metadata:
       labels:
-        app: staticws
+        app: staticws4vdl
     spec:
       containers:
-      - name: staticws
-        image: sim007/staticws:latest
+      - name: staticws4vdl
+        image: sim007/staticws4vdl:latest
         ports:
         -  containerPort: 80
 ---
 kind: Service
 apiVersion: v1
 metadata:
-  name: staticws-service
+  name: staticws4vdl-service
 spec:
   selector:
-    app: staticws
+    app: staticws4vdl
   ports:
   - protocol: TCP
-    port: 4225
+    port: 4226
     targetPort: 80
   type: LoadBalancer 

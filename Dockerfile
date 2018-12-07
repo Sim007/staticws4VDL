@@ -13,7 +13,7 @@ LABEL MAINTAINER="Johannes Sim" \
 # push:   docker push sim007/staticws4vdl:latest
 # pull:   docker pull sim007/staticws4vdl:latest
 
-# run:    docker container run --name staticws4vdl -d -p 4200:80 sim007/staticws4vdl:latest
+# run:    docker container run --rm --name staticws4vdl -d -p 4200:80 sim007/staticws4vdl:latest
 
 # delete: docker container rm -f staticws4vdl
 # in:     docker container exec -it staticws4vdl /bin/sh

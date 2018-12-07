@@ -19,4 +19,4 @@ LABEL MAINTAINER="Johannes Sim" \
 # in:     docker container exec -it staticws4vdl /bin/sh
 
 # compose:docker-compose up -d
-# k8s:    kubectl apply Staticws.yaml  
+# k8s:    kubectl apply -f Staticws.yaml  
